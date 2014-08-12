@@ -131,8 +131,8 @@ angular.module('jobrApp.services', []).
         // Create Service URL - TechReadyJobBoard = app name
         // TODO:  Enhance way of getting the app web url (without the angular routing) other than splitting the url
         var appWebUrl = decodeURIComponent($.getQueryStringValue("SPAppWebUrl"));
-        var serviceUrlArr = appWebUrl.split("TechReadyJobBoard");
-        var serviceUrl = serviceUrlArr[0] + 'TechReadyJobBoard';
+        var serviceUrlArr = appWebUrl.split("Jobr");
+        var serviceUrl = serviceUrlArr[0] + 'Jobr';
         console.log('serviceUrl: ' + serviceUrl);
         return new breeze.DataService({
 

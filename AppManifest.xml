@@ -7,7 +7,7 @@
      SharePointMinVersion="16.0.0.0"
 >
   <Properties>
-    <Title>Jobr</Title>
+    <Title>JobrSPApp</Title>
     <StartPage>~appWebUrl/App/index.html?{StandardTokens}</StartPage>
   </Properties>
 
