@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="JobListings" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/JobListings" Description="My List Instance">
+    <Data>
+      <Rows>
+        
+        <!--Forward-->
+        <Row>
+          <Field Name="Title">Forward</Field>
+          <Field Name="JobDescription">
+            Forwards are the most celebrated players in the team because they are often the ones who score goals. Since there are many ways to score a goal, there are also many types of forwards.
+            Accuracy, head ability, and ball control are the typical qualities of a forward. A forward does not have to as much work as the midfield or defense but he must be able to convert when his teammates give him the ball.
+          </Field>
+          <Field Name="SkillsUsed">Striking</Field>
+          <Field Name="JobLocation">Seattle, WA</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/3/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Starter</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Forward</Field>
+          <Field Name="JobDescription">
+            Forwards are the most celebrated players in the team because they are often the ones who score goals. Since there are many ways to score a goal, there are also many types of forwards.
+            Accuracy, head ability, and ball control are the typical qualities of a forward. A forward does not have to as much work as the midfield or defense but he must be able to convert when his teammates give him the ball.
+          </Field>
+          <Field Name="SkillsUsed">Striking</Field>
+          <Field Name="JobLocation">New York, NY</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Reserve</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Forward</Field>
+          <Field Name="JobDescription">
+            Forwards are the most celebrated players in the team because they are often the ones who score goals. Since there are many ways to score a goal, there are also many types of forwards.
+            Accuracy, head ability, and ball control are the typical qualities of a forward. A forward does not have to as much work as the midfield or defense but he must be able to convert when his teammates give him the ball.
+          </Field>
+          <Field Name="SkillsUsed">Striking</Field>
+          <Field Name="JobLocation">Washington DC</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Reserve</Field>
+        </Row>
+
+        <!--Goalkeepers-->
+        <Row>
+          <Field Name="Title">Goalkeeper</Field>
+          <Field Name="JobDescription">
+            The goalkeeper is simply known as the guy with gloves who keeps the opponents from scoring. He has a special position because only him can play the ball with his hands (provided that he is inside his own penalty area and the ball was not deliberately passed to him by a team mate).
+          </Field>
+          <Field Name="SkillsUsed">Goal Keeping</Field>
+          <Field Name="JobLocation">Miami, FL</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Reserve</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Goalkeeper</Field>
+          <Field Name="JobDescription">
+            The goalkeeper is simply known as the guy with gloves who keeps the opponents from scoring. He has a special position because only him can play the ball with his hands (provided that he is inside his own penalty area and the ball was not deliberately passed to him by a team mate).
+          </Field>
+          <Field Name="SkillsUsed">Goal Keeping</Field>
+          <Field Name="JobLocation">Orlando, FL</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Reserve</Field>
+        </Row>
+
+        <!--CBs-->
+        <Row>
+          <Field Name="Title">Center Back</Field>
+          <Field Name="JobDescription">
+            In a four-player defense, the center-backs are the two defenders in the middle.A center back must be strong, fearless, and good at timing tackles.
+          </Field>
+          <Field Name="SkillsUsed">Defending</Field>
+          <Field Name="JobLocation">Columbus, OH</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Reserve</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Center Back</Field>
+          <Field Name="JobDescription">
+            In a four-player defense, the center-backs are the two defenders in the middle.A center back must be strong, fearless, and good at timing tackles.
+          </Field>
+          <Field Name="SkillsUsed">Defending</Field>
+          <Field Name="JobLocation">Columbus, OH</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Reserve</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Center Back</Field>
+          <Field Name="JobDescription">
+            In a four-player defense, the center-backs are the two defenders in the middle.A center back must be strong, fearless, and good at timing tackles.
+          </Field>
+          <Field Name="SkillsUsed">Defending</Field>
+          <Field Name="JobLocation">Columbus, OH</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Reserve</Field>
+        </Row>
+
+
+
+        <Row>
+          <Field Name="Title">Wing-back</Field>
+          <Field Name="JobDescription">
+            A wing-back is a full-back that advances up to the opponent’s goal end. He runs the whole length of the football pitch: he defends the flanks like a dedicated full-back and attacks like a winger. This is the most physically demanding position on the field.
+          </Field>
+          <Field Name="SkillsUsed">Defending</Field>
+          <Field Name="JobLocation">Los Angeles, CA</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Starter</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Wing-back</Field>
+          <Field Name="JobDescription">
+            A wing-back is a full-back that advances up to the opponent’s goal end. He runs the whole length of the football pitch: he defends the flanks like a dedicated full-back and attacks like a winger. This is the most physically demanding position on the field.
+          </Field>
+          <Field Name="SkillsUsed">Defending</Field>
+          <Field Name="JobLocation">Los Angeles, CA</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Starter</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Wing-back</Field>
+          <Field Name="JobDescription">
+            A wing-back is a full-back that advances up to the opponent’s goal end. He runs the whole length of the football pitch: he defends the flanks like a dedicated full-back and attacks like a winger. This is the most physically demanding position on the field.
+          </Field>
+          <Field Name="SkillsUsed">Defending</Field>
+          <Field Name="JobLocation">Los Angeles, CA</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Reserve</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Central Midfielder</Field>
+          <Field Name="JobDescription">
+            A central midfielder is stationed at the center of the field. A box-to-box midfielder does the following: create opportunities for the striker and stop the opponent’s attacks. Stamina, technical ability, and relentless hard-work are the attributes of this type of midfielder
+          </Field>
+          <Field Name="SkillsUsed">Striking and Defending</Field>
+          <Field Name="JobLocation">Dallas, TX</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Starter</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Central Midfielder</Field>
+          <Field Name="JobDescription">
+            A central midfielder is stationed at the center of the field. A box-to-box midfielder does the following: create opportunities for the striker and stop the opponent’s attacks. Stamina, technical ability, and relentless hard-work are the attributes of this type of midfielder
+          </Field>
+          <Field Name="SkillsUsed">Striking and Defending</Field>
+          <Field Name="JobLocation">Dallas, TX</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Reserve</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Central Midfielder</Field>
+          <Field Name="JobDescription">
+            A central midfielder is stationed at the center of the field. A box-to-box midfielder does the following: create opportunities for the striker and stop the opponent’s attacks. Stamina, technical ability, and relentless hard-work are the attributes of this type of midfielder
+          </Field>
+          <Field Name="SkillsUsed">Striking and Defending</Field>
+          <Field Name="JobLocation">Dallas, TX</Field>
+          <Field Name="PostedBy">Scout</Field>
+          <Field Name="PostedDate">6/1/2014</Field>
+          <Field Name="ValidUntil">6/10/2014</Field>
+          <Field Name="Manager">Jürgen Klinsmann</Field>
+          <Field Name="Level">Reserve</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

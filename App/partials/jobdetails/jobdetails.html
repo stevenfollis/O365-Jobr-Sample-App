@@ -1,0 +1,71 @@
+﻿<div class="container results">
+
+    <div class="row">
+
+        <div class="col-sm-9">
+
+            <ol class="breadcrumb">
+                <li><a href="#/joblistings">Job Board</a></li>
+                <li class="active">{{job.Id}} - {{job.Title}}</li>
+            </ol>
+
+            <div class="page-header">
+                <h1>{{job.Title}} <small>{{job.Level}}</small></h1>
+            </div>
+
+            <p>{{job.JobDescription}}</p>
+
+            <div class="row">
+
+                <div class="col-xs-6 col-lg-3">
+                    <h3><span class="glyphicon glyphicon-user"></span> Manager</h3>
+                    {{job.Manager}}
+                </div>
+
+                <div class="col-xs-6 col-lg-3">
+                    <h3><span class="glyphicon glyphicon-arrow-up"></span> Posted</h3>
+                    {{job.PostedDate}}
+                </div>
+
+                <div class="col-xs-6 col-lg-3">
+                    <h3><span class="glyphicon glyphicon-arrow-down"></span> Expires</h3>
+                    {{job.ValidUntil}}
+                </div>
+
+                <div class="col-xs-6 col-lg-3">
+                    <h3><span class="glyphicon glyphicon-flash"></span> Skills</h3>
+                    <span class="label label-primary">{{job.SkillsUsed}}</span>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-xs-12 location">
+                    <h3><span class="glyphicon glyphicon-map-marker"></span> Location</h3>
+                    <a href="http://www.bing.com/maps/?where1={{job.JobLocation}}&lvl=11" target="_blank">
+                        <img class="img-responsive hidden-xs" src="https://dev.virtualearth.net/REST/v1/Imagery/Map/road/{{job.JobLocation}}?mapSize=1000,200&key=AsuIERGfNfOPQgEYe_gOZibBK7TTJhAQP5EYA9jTxVRNe6M2SrtGK1OvHy8Y7nlD" alt="Location Map Image" />
+                        <span class="visible-xs">{{job.JobLocation}}</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-sm-3">
+
+            <h3>Actions</h3>
+            <div class="actions">
+                <a href="#/joblistings" class="btn btn-lg btn-block btn-primary" data-ng-click="goBack()"><span class="glyphicon glyphicon-share "></span> Back<span class="hidden-xs hidden-sm"> to Job Board</span></a>
+                <a href="https://twitter.com/intent/tweet?text=Check out this {{job.Title}} position in {{job.JobLocation}}" class="btn btn-lg btn-block btn-primary" target="_blank"><span class="glyphicon glyphicon-share"></span> Share</a>
+                <a href="mailto:jobs@contoso.com?subject=Contoso Jobs: {{job.Title}} posted on {{job.PostedDate}}" class="btn btn-lg btn-block btn-primary"><span class="glyphicon glyphicon-envelope"></span> Email</a>
+                <a class="btn btn-lg btn-block btn-success"><span class="glyphicon glyphicon-pencil"></span> Apply</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

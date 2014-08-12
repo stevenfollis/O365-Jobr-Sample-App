@@ -1,0 +1,10 @@
+<!-- Results CSS -->
+<link rel="stylesheet" href="partials/results/results.min.css" />
+
+<div class="container-fluid results">
+
+    <div data-ng-repeat="jobListing in jobListings | filter: filterJobs">
+        <job-result data-ng-click="goToJob(jobListing)" details="jobListing"></job-result>
+    </div>
+
+</div>

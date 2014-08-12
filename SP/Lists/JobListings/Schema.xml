@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="JobListings" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/JobListings" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+
+
+      
+      
+      
+    <ContentType ID="0x010035ab72606c994bfeb9a6b5abd705c21c" Name="ListFieldsContentType">
+        <FieldRefs>
+          
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{fb1fd61e-59be-4f15-bdbf-89bd8c5e76dd}" Name="JobDescription" /><FieldRef ID="{02748265-929c-4a07-baf3-d8d106158b6c}" Name="SkillsUsed" /><FieldRef ID="{87146463-d3e1-456e-9612-0d3592ad5ab9}" Name="JobLocation" /><FieldRef ID="{b66ef4e7-4e37-45c4-bc16-ba9dd56902d4}" Name="PostedBy" /><FieldRef ID="{f1f0abd2-cfd8-405a-88f7-3efce463b286}" Name="PostedDate" /><FieldRef ID="{7eecad63-eddf-4b3b-b37e-c7dc492e3108}" Name="ValidUntil" /><FieldRef ID="{bed600ad-253d-4e40-9b23-38b1764f6fd6}" Name="Manager" /><FieldRef ID="{e56bcd7a-aedf-4e64-b361-17ab3e56da91}" Name="Level" /></FieldRefs>
+      </ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+
+      
+      
+      
+      
+      
+      
+      
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Role Title" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="JobDescription" ID="{fb1fd61e-59be-4f15-bdbf-89bd8c5e76dd}" DisplayName="Job Description" Type="Note" /><Field Name="SkillsUsed" ID="{02748265-929c-4a07-baf3-d8d106158b6c}" DisplayName="Skills Used" Type="Note" /><Field Name="JobLocation" ID="{87146463-d3e1-456e-9612-0d3592ad5ab9}" DisplayName="Job Location" Type="Text" /><Field Name="PostedBy" ID="{b66ef4e7-4e37-45c4-bc16-ba9dd56902d4}" DisplayName="Posted By" Type="Text" /><Field Name="PostedDate" ID="{f1f0abd2-cfd8-405a-88f7-3efce463b286}" DisplayName="Posted Date" Type="Text" /><Field Name="ValidUntil" ID="{7eecad63-eddf-4b3b-b37e-c7dc492e3108}" DisplayName="Valid Until" Type="Text" /><Field Name="Manager" ID="{bed600ad-253d-4e40-9b23-38b1764f6fd6}" DisplayName="Manager" Type="Text" /><Field Name="Level" ID="{e56bcd7a-aedf-4e64-b361-17ab3e56da91}" DisplayName="Level" Type="Text" /></Fields>
+    <Views>
+
+
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+          
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="JobDescription" /><FieldRef Name="SkillsUsed" /><FieldRef Name="JobLocation" /><FieldRef Name="PostedBy" /><FieldRef Name="PostedDate" /><FieldRef Name="ValidUntil" /><FieldRef Name="Manager" /><FieldRef Name="Level" /></ViewFields>
+        <Query>
+          <OrderBy>
+
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

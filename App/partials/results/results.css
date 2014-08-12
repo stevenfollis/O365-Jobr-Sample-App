@@ -1,0 +1,15 @@
+﻿.results h2 {
+  margin: 0 0 10px; }
+.results .well {
+  border-radius: 0;
+  position: relative;
+  cursor: pointer; }
+.results .level {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  background: #b3b3b3;
+  font-weight: bold; }
+
+/*# sourceMappingURL=results.css.map */

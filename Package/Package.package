@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9f7976a9-a3bb-4b39-b9e3-ffed781b9dc8" solutionId="9f7976a9-a3bb-4b39-b9e3-ffed781b9dc8" resetWebServer="false" sharePointProductVersion="16.0" name="SPAngularAppStarter" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="4d2730b1-8335-441c-8780-481bcbe14d82" />
+  </features>
+</package>

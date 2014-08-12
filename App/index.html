@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="jobrApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The One and Only Jobr</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-3.1.1/css/bootstrap.min.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/animatecss/animate.css" />
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="css/app.css" />
+
+</head>
+<body ng-controller="MainCtrl">
+
+    <nav class="navbar navbar-default" role="navigation">
+
+        <div class="container-fluid">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Contoso Jobr</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search" ng-model="searchTerm">
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-ng-click="searchButtonClicked(searchTerm)">Submit</button>
+                </form>
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Location <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li data-ng-click="setNavFilter(location)" ng-repeat="location in locations"><a> {{location}}</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Position <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li data-ng-click="setNavFilter(position)" ng-repeat="position in positions"><a> {{position}}</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Level <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <!--AVICII-->
+                            <li data-ng-click="setNavFilter(level)" ng-repeat="level in levels"><a> {{level}}</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Manager <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li data-ng-click="setNavFilter(manager)" ng-repeat="manager in managers"><a> {{manager}}</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/newjoblisting"><span class="glyphicon glyphicon-plus"></span> Post New Job</a></li>
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container-fluid -->
+
+    </nav>
+
+    <!-- Routes inserted here -->
+    <div ng-view=""></div>
+
+    <!--jQuery-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+
+    <!--SharePointy JS libs-->
+    <script src="/_layouts/15/init.js"></script>
+    <script src="/_layouts/15/core.js"></script>
+    <script src="/_layouts/15/1033/strings.js"></script>
+    <script src="/_layouts/15/SP.UI.Controls.js"></script>
+
+    <!-- Angular JS - Uncomment to use CDNs for Production-->
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular-animate.min.js"></script>
+    -->
+    <!-- Angular JS - Local copies for development. Comment out or remove and use CDNs for production -->
+    <script src="vendor/angular/angular-1.3.0-beta.13/angular.min.js"></script>
+    <script src="vendor/angular/angular-1.3.0-beta.13/angular-route.min.js"></script>
+    <script src="vendor/angular/angular-1.3.0-beta.13/angular-animate.min.js"></script>
+    <script src="vendor/angular/angular-1.3.0-beta.13/angular-resource.js"></script>
+    <script src="vendor/angular/angular-1.3.0-beta.13/angular-cookies.js"></script>
+    <script src="vendor/angular/q.js"></script>
+    <script src="vendor/angular-ui/ui-utils.js"></script>
+
+    <!-- Breeze -->
+    <script src="vendor/breeze/breeze-1.4.13/q.js"></script>
+    <script src="vendor/breeze/breeze-1.4.13/breeze.debug.js"></script>
+    <script src="vendor/breeze/breeze.angular.js"></script>
+    <script src="vendor/breeze/breeze.directives.validation.js"></script>
+    <script src="vendor/breeze/breeze-1.4.13/Labs/breeze.metadata-helper.js"></script>
+    <script src="vendor/breeze/breeze-1.4.13/Labs/breeze.labs.dataservice.abstractrest.js"></script>
+    <script src="vendor/breeze/breeze-1.4.13/Labs/breeze.labs.dataservice.sharepoint.js"></script>
+
+    <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+    <!-- App JS -->
+    <script src="js/app.js"></script>
+    <script src="js/services/services.js"></script>
+    <script src="js/controllers/controllers.js"></script>
+    <script src="js/filters/filters.js"></script>
+    <script src="js/directives/directives.js"></script>
+    <script src="js/utilities/jquery-extensions.js"></script>
+
+</body>
+</html>
